@@ -54,7 +54,7 @@ Represents the shape of the data that we expect.
 
 #### **_PIPES_**
 
-Pipes operate on the **arguments** to be processed by the route handler, just before the handler is caller.
+Pipes operate on the **arguments** to be processed by the route handler, just before the handler is called.
 
 Pipes can perform **data transformation** or **data validation.**
 

@@ -1,0 +1,324 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-10-26T15:54:49.598Z",
+  "__export_source": "insomnia.desktop.app:v2020.4.1",
+  "resources": [
+    {
+      "_id": "req_5f660d19059744798827c33d95bb68ba",
+      "parentId": "fld_96c35be6a57845bda422835e7f2034cb",
+      "modified": 1603726789378,
+      "created": 1601583798870,
+      "url": "{{ base_url }}/auth/signin",
+      "name": "Sign In",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"username\": \"Elon Musk\",\n\t\"password\": \"Aa123SAD@#@#!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_87b8d97583ad4008a8e592162a9e4760"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601583798870,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_96c35be6a57845bda422835e7f2034cb",
+      "parentId": "fld_c8e798e69a85416e9c38f99ae719ebad",
+      "modified": 1601572974349,
+      "created": 1601572974349,
+      "name": "Authentication",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1601572974349,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_c8e798e69a85416e9c38f99ae719ebad",
+      "parentId": "wrk_aa0064ffe3334eee875ce780ffac66ca",
+      "modified": 1601300597499,
+      "created": 1601300597499,
+      "name": "NestJS Task Management",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1601300597499,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_aa0064ffe3334eee875ce780ffac66ca",
+      "parentId": null,
+      "modified": 1601300491926,
+      "created": 1601300491926,
+      "name": "NestJS Udemy Course",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_e0e5388e840549cb83ab8872e446d441",
+      "parentId": "fld_96c35be6a57845bda422835e7f2034cb",
+      "modified": 1603726750314,
+      "created": 1601572994667,
+      "url": "{{ base_url }}/auth/signup",
+      "name": "Sign Up User 1",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"username\": \"Gabriel\",\n\t\"password\": \"Aa123SAD@#@#!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_7a0751f935c54398aeeb290ea2a4655c"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601572994667,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_db031c9827c245c2b08d5b5e33c2aa87",
+      "parentId": "fld_96c35be6a57845bda422835e7f2034cb",
+      "modified": 1603726779691,
+      "created": 1603726758014,
+      "url": "{{ base_url }}/auth/signup",
+      "name": "Sign Up User 2",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"username\": \"Elon Musk\",\n\t\"password\": \"Aa123SAD@#@#!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_7a0751f935c54398aeeb290ea2a4655c"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601456148710,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_354423f0391d46298131c7f203fb91b2",
+      "parentId": "fld_c8e798e69a85416e9c38f99ae719ebad",
+      "modified": 1603727308847,
+      "created": 1601339302686,
+      "url": "{{ base_url }}/tasks/3",
+      "name": "Get Task By ID",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{ accessToken_user2 }}"
+      },
+      "metaSortKey": -1601339302753,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e3e48c1c30044a8380e4e9e9082fab52",
+      "parentId": "fld_c8e798e69a85416e9c38f99ae719ebad",
+      "modified": 1603727607999,
+      "created": 1601300503312,
+      "url": "{{ base_url }}/tasks?status=OPEN&search=is",
+      "name": "Get All Tasks",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{ accessToken_user1 }}"
+      },
+      "metaSortKey": -1601300503312,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4d6c77306431447dad1dcd30bd636613",
+      "parentId": "fld_c8e798e69a85416e9c38f99ae719ebad",
+      "modified": 1603727069085,
+      "created": 1601337405021,
+      "url": "{{ base_url }}/tasks",
+      "name": "Create Task",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"IA\",\n\t\"description\": \"is great\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_58fd7b17850a40c2bd2e6a949d30ece1"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{ accessToken_user1 }}"
+      },
+      "metaSortKey": -1601300503262,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d70c433eedd043a3b706420e2144afa8",
+      "parentId": "fld_c8e798e69a85416e9c38f99ae719ebad",
+      "modified": 1603727419171,
+      "created": 1601394099713,
+      "url": "{{ base_url }}/tasks/1/status",
+      "name": "Update Task Status",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"status\": \"DONE\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_5841880bacfa46a3b295b83e6448bc0a"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{ accessToken_user2 }}"
+      },
+      "metaSortKey": -1601300503237,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d22f3285e3474095b89cac64f956f462",
+      "parentId": "fld_c8e798e69a85416e9c38f99ae719ebad",
+      "modified": 1603727600117,
+      "created": 1601393603798,
+      "url": "{{ base_url }}/tasks/1",
+      "name": "Delete Task",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{ accessToken_user1 }}"
+      },
+      "metaSortKey": -1601300503212,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_c166f69192560b1713d064c8a49e2534a302281b",
+      "parentId": "wrk_aa0064ffe3334eee875ce780ffac66ca",
+      "modified": 1603726805686,
+      "created": 1601300491948,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:3000",
+        "accessToken_user1": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdhYnJpZWwiLCJpYXQiOjE2MDM3MjYxNDcsImV4cCI6MTYwMzcyOTc0N30.Q7BOn9hL_UH4Lqh5Gz3bcwe5731bQJGBPSX8Sn_ZafE",
+        "accessToken_user2": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkVsb24gTXVzayIsImlhdCI6MTYwMzcyNjc5MCwiZXhwIjoxNjAzNzMwMzkwfQ.F-ZjrQ4GKEtUnj_ziOoyRglz3hIIVzuYML29gTvk-AM"
+      },
+      "dataPropertyOrder": {
+        "&": ["base_url", "accessToken_user1", "accessToken_user2"]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1601300491948,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_c166f69192560b1713d064c8a49e2534a302281b",
+      "parentId": "wrk_aa0064ffe3334eee875ce780ffac66ca",
+      "modified": 1601300491950,
+      "created": 1601300491950,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_188579c04e034217a08eb2edb79ca1cc",
+      "parentId": "wrk_aa0064ffe3334eee875ce780ffac66ca",
+      "modified": 1601300491929,
+      "created": 1601300491929,
+      "fileName": "NestJS Udemy Course",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
