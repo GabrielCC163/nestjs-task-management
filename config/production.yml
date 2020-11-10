@@ -1,0 +1,5 @@
+server:
+  origin: http://nestjs-task-management-frontend-grodrigues.s3-website-sa-east-1.amazonaws.com
+
+db:
+  synchronize: false
