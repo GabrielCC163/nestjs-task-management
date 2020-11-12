@@ -116,3 +116,16 @@ Create a **repository** (handles database logic):
 - Inject UserRepository as dependency injection (constructor) into auth.service.ts
 
   - JSON Web Tokens
+
+#### Deploy on AWS Elastic Beanstalk
+
+1. Create new application and set the application name (nestjs-task-management).
+2. Set up the environment with a domain (nestjs-task-management-prod).
+3. Select Preconfigured platform and Node.js.
+4. Be sure to have a Procfile file with start command in the root of the project.
+5. Upload the code in a .zip file without node_modules.
+6. Set version label (v1).
+7. Configure more options > Software > Modify > Set up a JWT_SECRET environment variable with a random value, and a TYPEORM_SYNC variable with "true" value. > Save.
+8. Database > Set Engine to be postgres > Instance class db.t2.micro > set Username to be postgres > set Password (a strong one)
+9. Create environment.
+10. After done, change TYPEORM_SYNC to "false".
